@@ -5,10 +5,261 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        h1, h2{
+    font-weight:100;
+  }
+  
+  #header{
+    position:fixed;
+    width:100vw;
+    height:100vh;
+    top:0;
+    left:0;
+    z-index:1000;
+    background:#e9e9e9;
+    background:url("https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?dpr=2&auto=format&fit=crop&w=1500&h=999&q=80&cs=tinysrgb&crop=");
+    background-size:cover;
+    transition:.5s;
+    overflow:hidden;
+  }
+  
+  #dash{
+    position:absolute;
+    top:15px;
+    left:15px;
+    background:#222;
+    color:white;
+    font-family:"Open Sans";
+    padding:15px;
+    z-index:1000;
+    border:solid 5px #424242;
+  }
+  
+  #dash #counter{
+    margin-bottom:15px;
+  }
+  
+  #container{
+    height:100vh;
+    width:100vw;
+    position:relative;
+    top:0;
+    left:0;
+    perspective:100vh;
+  }
+  
+  #wrap{
+    transform:rotateX(50deg) translateY(-2000px) translateZ(800px);
+    transform-style:preserve-3d;
+    max-width:600px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  
+  section{
+    border:solid 1px black;
+    padding:15px;
+    margin-bottom:15px;
+    width:40%;
+    transition:.5s;
+    margin-bottom:200px;
+    background:#222;
+    border:solid 5px #424242;
+    color:white;
+    font-weight:100;
+    max-width:300px
+  }
+  
+  section.active{
+    transform:rotateX(-50deg);
+  }
+  
+  section:nth-child(odd){
+    margin-left:auto;
+  }
+  
+  section:nth-child(even){
+    margin-right:auto;
+  }
+  
+  #dash label{
+    display:block;
+    margin-bottom:5px;
+  }
+  
+  #dash hr{
+    opacity:.2;
+  }
+  
+  #header.hide{
+    top:-100vh;
+  }
+  
+  #main{
+    position:relative;
+    z-index:0;
+  }
+    </style>
 </head>
 <body>
-    TROUVEZ LE i : lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllIlllllllllllllllllllllllllllllllllllllll
-    TROUVEZ LE o : 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000O0000000000000000000000000000000000000000000000000000000000000000000000
-    TROUVEZ LE m : nnnnnnnnnnnnnnnmnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+    <div id="header">
+        <div id="dash">
+          <label>Body Position</label>
+          <div id="counter">-400</div>
+          <hr>
+          <div id="control">
+            <label>Speed</label>
+            <input type="range" min="0" max="10" step="1" value="5"></input>
+          </div>
+        </div>
+        <div id="container">
+        <div id="wrap">
+          <section>
+            <h1>This is the sixth section</h1>
+            <h2>Position</h2>
+            <h3>Keep Scrolling</h3>
+            <p>Kitsch vaporware copper mug wayfarers. Portland hell of wayfarers synth. Ugh whatever sriracha, direct trade ramps asymmetrical migas beard vaporware truffaut umami pok pok fixie.</p>
+          </section>
+        <section>
+          <h1>This is the fifth section</h1>
+          <h2>Position</h2>
+          <p>Kitsch vaporware copper mug wayfarers. Portland hell of wayfarers synth. Ugh whatever sriracha, direct trade ramps asymmetrical migas beard vaporware truffaut umami pok pok fixie.</p>
+      </section>
+        <section>
+          <h1>This is the fourth section</h1>
+          <h2>Position</h2>
+          <p>Kitsch vaporware copper mug wayfarers. Portland hell of wayfarers synth. Ugh whatever sriracha, direct trade ramps asymmetrical migas beard vaporware truffaut umami pok pok fixie.</p>
+      </section>
+        
+      <section>
+          <h1>This is the third section</h1>
+        <h2>Position</h2>
+          <p>Kitsch vaporware copper mug wayfarers. Portland hell of wayfarers synth. Ugh whatever sriracha, direct trade ramps asymmetrical migas beard vaporware truffaut umami pok pok fixie.</p>
+      </section>
+      
+      <section>
+          <h1>This is the second section</h1>
+        <h2>Position</h2>
+          <p>Kitsch vaporware copper mug wayfarers. Portland hell of wayfarers synth. Ugh whatever sriracha, direct trade ramps asymmetrical migas beard vaporware truffaut umami pok pok fixie.</p>
+      </section>
+        
+      <section>
+        <h1>This is the first section</h1>
+        <h2>Position</h2>
+        <p>Kitsch vaporware copper mug wayfarers. Portland hell of wayfarers synth. Ugh whatever sriracha, direct trade ramps asymmetrical migas beard vaporware truffaut umami pok pok fixie.</p>
+      </section>
+      
+      
+      </div>
+      </div>
+      </div>
+      
+      <div id="main">
+        <h1>This is the rest of the content</h1>
+        <p>Woke yr freegan paleo. Vegan chambray gastropub gentrify four loko gluten-free fashion axe, williamsburg blog fixie. Sartorial kickstarter tilde lomo flannel, vinyl microdosing sriracha vaporware tofu you probably haven't heard of them. Woke asymmetrical vape hell of. Sartorial fixie neutra viral. Bicycle rights vexillologist tattooed, brooklyn swag aesthetic chambray beard. Salvia hexagon flannel retro.</p>
+      
+      <p>Gochujang tattooed listicle, literally whatever hammock truffaut waistcoat snackwave ugh everyday carry. Vaporware skateboard la croix, selvage cold-pressed cray readymade austin twee drinking vinegar. Viral shoreditch readymade DIY crucifix, literally fanny pack farm-to-table 90's pickled tumeric cardigan. Chia iPhone succulents food truck knausgaard. Tilde leggings umami ramps. Whatever air plant trust fund meggings. Etsy tote bag skateboard, street art vegan food truck pop-up la croix meh yr.</p>
+      
+      <p>Man bun roof party meh, fam ramps waistcoat pork belly. Health goth vegan brunch ennui organic. Skateboard ramps meditation photo booth. Echo park fixie selvage pour-over raw denim paleo. Quinoa copper mug semiotics, street art brunch af vice tofu lumbersexual aesthetic freegan. Seitan butcher viral portland 90's ennui, VHS brunch plaid banh mi single-origin coffee hammock pop-up cliche vinyl. Retro post-ironic craft beer, chicharrones you probably haven't heard of them brooklyn plaid twee fashion axe flexitarian typewriter aesthetic fap hell of.</p>
+      
+      <p>Lomo tumeric gluten-free selvage aesthetic. Occupy meditation lumbersexual, umami tbh raclette church-key blog succulents art party typewriter readymade prism. Pour-over meh heirloom, lumbersexual cred chillwave gastropub portland la croix. Lumbersexual fap YOLO, flannel microdosing humblebrag wayfarers. Ramps portland tilde air plant brooklyn. Cardigan brunch squid gastropub. Flannel vexillologist chambray chia vegan, asymmetrical kitsch yr umami lomo.</p>
+          <p>Woke yr freegan paleo. Vegan chambray gastropub gentrify four loko gluten-free fashion axe, williamsburg blog fixie. Sartorial kickstarter tilde lomo flannel, vinyl microdosing sriracha vaporware tofu you probably haven't heard of them. Woke asymmetrical vape hell of. Sartorial fixie neutra viral. Bicycle rights vexillologist tattooed, brooklyn swag aesthetic chambray beard. Salvia hexagon flannel retro.</p>
+      
+      <p>Gochujang tattooed listicle, literally whatever hammock truffaut waistcoat snackwave ugh everyday carry. Vaporware skateboard la croix, selvage cold-pressed cray readymade austin twee drinking vinegar. Viral shoreditch readymade DIY crucifix, literally fanny pack farm-to-table 90's pickled tumeric cardigan. Chia iPhone succulents food truck knausgaard. Tilde leggings umami ramps. Whatever air plant trust fund meggings. Etsy tote bag skateboard, street art vegan food truck pop-up la croix meh yr.</p>
+      
+      <p>Man bun roof party meh, fam ramps waistcoat pork belly. Health goth vegan brunch ennui organic. Skateboard ramps meditation photo booth. Echo park fixie selvage pour-over raw denim paleo. Quinoa copper mug semiotics, street art brunch af vice tofu lumbersexual aesthetic freegan. Seitan butcher viral portland 90's ennui, VHS brunch plaid banh mi single-origin coffee hammock pop-up cliche vinyl. Retro post-ironic craft beer, chicharrones you probably haven't heard of them brooklyn plaid twee fashion axe flexitarian typewriter aesthetic fap hell of.</p>
+      
+      <p>Lomo tumeric gluten-free selvage aesthetic. Occupy meditation lumbersexual, umami tbh raclette church-key blog succulents art party typewriter readymade prism. Pour-over meh heirloom, lumbersexual cred chillwave gastropub portland la croix. Lumbersexual fap YOLO, flannel microdosing humblebrag wayfarers. Ramps portland tilde air plant brooklyn. Cardigan brunch squid gastropub. Flannel vexillologist chambray chia vegan, asymmetrical kitsch yr umami lomo.</p>
+          <p>Woke yr freegan paleo. Vegan chambray gastropub gentrify four loko gluten-free fashion axe, williamsburg blog fixie. Sartorial kickstarter tilde lomo flannel, vinyl microdosing sriracha vaporware tofu you probably haven't heard of them. Woke asymmetrical vape hell of. Sartorial fixie neutra viral. Bicycle rights vexillologist tattooed, brooklyn swag aesthetic chambray beard. Salvia hexagon flannel retro.</p>
+      
+      <p>Gochujang tattooed listicle, literally whatever hammock truffaut waistcoat snackwave ugh everyday carry. Vaporware skateboard la croix, selvage cold-pressed cray readymade austin twee drinking vinegar. Viral shoreditch readymade DIY crucifix, literally fanny pack farm-to-table 90's pickled tumeric cardigan. Chia iPhone succulents food truck knausgaard. Tilde leggings umami ramps. Whatever air plant trust fund meggings. Etsy tote bag skateboard, street art vegan food truck pop-up la croix meh yr.</p>
+      
+      <p>Man bun roof party meh, fam ramps waistcoat pork belly. Health goth vegan brunch ennui organic. Skateboard ramps meditation photo booth. Echo park fixie selvage pour-over raw denim paleo. Quinoa copper mug semiotics, street art brunch af vice tofu lumbersexual aesthetic freegan. Seitan butcher viral portland 90's ennui, VHS brunch plaid banh mi single-origin coffee hammock pop-up cliche vinyl. Retro post-ironic craft beer, chicharrones you probably haven't heard of them brooklyn plaid twee fashion axe flexitarian typewriter aesthetic fap hell of.</p>
+      
+      <p>Lomo tumeric gluten-free selvage aesthetic. Occupy meditation lumbersexual, umami tbh raclette church-key blog succulents art party typewriter readymade prism. Pour-over meh heirloom, lumbersexual cred chillwave gastropub portland la croix. Lumbersexual fap YOLO, flannel microdosing humblebrag wayfarers. Ramps portland tilde air plant brooklyn. Cardigan brunch squid gastropub. Flannel vexillologist chambray chia vegan, asymmetrical kitsch yr umami lomo.</p>
+          <p>Woke yr freegan paleo. Vegan chambray gastropub gentrify four loko gluten-free fashion axe, williamsburg blog fixie. Sartorial kickstarter tilde lomo flannel, vinyl microdosing sriracha vaporware tofu you probably haven't heard of them. Woke asymmetrical vape hell of. Sartorial fixie neutra viral. Bicycle rights vexillologist tattooed, brooklyn swag aesthetic chambray beard. Salvia hexagon flannel retro.</p>
+      
+      <p>Gochujang tattooed listicle, literally whatever hammock truffaut waistcoat snackwave ugh everyday carry. Vaporware skateboard la croix, selvage cold-pressed cray readymade austin twee drinking vinegar. Viral shoreditch readymade DIY crucifix, literally fanny pack farm-to-table 90's pickled tumeric cardigan. Chia iPhone succulents food truck knausgaard. Tilde leggings umami ramps. Whatever air plant trust fund meggings. Etsy tote bag skateboard, street art vegan food truck pop-up la croix meh yr.</p>
+      
+      <p>Man bun roof party meh, fam ramps waistcoat pork belly. Health goth vegan brunch ennui organic. Skateboard ramps meditation photo booth. Echo park fixie selvage pour-over raw denim paleo. Quinoa copper mug semiotics, street art brunch af vice tofu lumbersexual aesthetic freegan. Seitan butcher viral portland 90's ennui, VHS brunch plaid banh mi single-origin coffee hammock pop-up cliche vinyl. Retro post-ironic craft beer, chicharrones you probably haven't heard of them brooklyn plaid twee fashion axe flexitarian typewriter aesthetic fap hell of.</p>
+      
+      <p>Lomo tumeric gluten-free selvage aesthetic. Occupy meditation lumbersexual, umami tbh raclette church-key blog succulents art party typewriter readymade prism. Pour-over meh heirloom, lumbersexual cred chillwave gastropub portland la croix. Lumbersexual fap YOLO, flannel microdosing humblebrag wayfarers. Ramps portland tilde air plant brooklyn. Cardigan brunch squid gastropub. Flannel vexillologist chambray chia vegan, asymmetrical kitsch yr umami lomo.</p>
+      </div>
 </body>
 </html>
+
+<script>var speed = parseInt($('#control input').val());
+
+    var zpos, xpos, windowHeight, scale = 0;
+    
+    function calcPos(){
+      windowHeight = $(window).height();
+      zpos = -(2000);
+      xpos = 800;
+      scale = (1);
+    }
+    
+    function draw(){
+        $('#wrap').css('transform', 'rotateX(50deg) translateY('+zpos+'px) translateZ('+xpos+'px) scale('+scale+')');
+    }
+    
+    calcPos();
+    
+    $(window).resize(function(){
+      calcPos();
+      draw();
+    });
+    
+    $('#control input').change(function(){
+      speed = parseInt($('#control input').val());
+    });
+    
+    
+    
+    $('#container').bind('mousewheel', function(e){
+      if(e.originalEvent.wheelDelta /120 > 0) {
+        if(zpos < 10000) zpos += speed;
+      } else{
+          if(zpos > -5000) zpos -= speed;
+      }
+      
+      draw();
+      console.log(zpos);
+      $('#counter').html(zpos);
+      
+      $('section').each(function(){
+        var top = $(this).position();
+        $(this).find('h2').html(top.top);
+        if(top.top > windowHeight*4/10){
+          $(this).addClass('active');
+        }
+        if(top.top < windowHeight*3/10) { $(this).removeClass('active') }
+      });
+      
+      if(zpos > 1000){
+        if($('#header').hasClass('ready')) return;
+        $('#header').addClass('hide');
+        setTimeout(function(){
+          $('#header').addClass('ready');
+        }, 1000);
+      }
+      
+    });
+    
+    
+    $(window).bind('mousewheel', function(e){
+      if($('#header').hasClass('ready')){
+        if($('body').scrollTop() < 10 ){
+          if(e.originalEvent.wheelDelta /120 > 0){
+            zpos=900;
+            $('#wrap').css('transform', 'rotateX(50deg) translateY('+zpos+'px) translateZ('+xpos+'px)');
+            $('#header').removeClass('hide');
+            setTimeout(function(){
+              $('#header').removeClass('ready');
+            }, 1000);
+            
+          }
+        }
+      }
+    });</script>
